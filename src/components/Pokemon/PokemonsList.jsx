@@ -72,5 +72,7 @@ const mapStateToProps = state => ({
     pokemons: state.pokemons,
     loading: state.loading,
 });
-  
+
+export { PokemonsList as TestablePokemonsList };
+
 export default connect(mapStateToProps)(PokemonsList);

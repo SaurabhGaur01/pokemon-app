@@ -36,12 +36,13 @@ const FilterBar = ({
                 </span>
             </div>
             <input
-                type="text"
-                className="form-control"
-                aria-label="Small"
-                aria-describedby="inputGroup-sizing-sm"
-                onChange={inputOnchage}
-                placeholder="Name or Abilities" 
+              id="name-input"
+              type="text"
+              className="form-control"
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-sm"
+              onChange={inputOnchage}
+              placeholder="Name or Abilities" 
             />
         </div>
       </div>

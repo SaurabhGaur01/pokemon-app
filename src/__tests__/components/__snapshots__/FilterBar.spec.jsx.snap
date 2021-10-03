@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterBar should render component correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="center-child col-md-4"
+  >
+    <AppDropdown
+      label="Sort By"
+      onSelection={[Function]}
+      options={
+        Array [
+          Object {
+            "text": "Please Select",
+            "value": "NONE",
+          },
+          Object {
+            "text": "Name ASC",
+            "value": "NAME_ASC_ORDER",
+          },
+          Object {
+            "text": "Name DSC",
+            "value": "NAME_DSC_ORDER",
+          },
+          Object {
+            "text": "Height ASC",
+            "value": "HEIGHT_ASC_ORDER",
+          },
+          Object {
+            "text": "Height DSC",
+            "value": "HEIGHT_DSC_ORDER",
+          },
+          Object {
+            "text": "Width ASC",
+            "value": "WEIGHT_ASC_ORDER",
+          },
+          Object {
+            "text": "Width DSC",
+            "value": "WEIGHT_DSC_ORDER",
+          },
+        ]
+      }
+    />
+  </div>
+  <div
+    className="center-child col-md-4"
+  >
+    <div
+      className="input-group input-group-sm mb-3"
+    >
+      <div
+        className="input-group-prepend"
+      >
+        <span
+          className="input-group-text"
+          id="inputGroup-sizing-sm"
+        >
+          Search By
+        </span>
+      </div>
+      <input
+        aria-describedby="inputGroup-sizing-sm"
+        aria-label="Small"
+        className="form-control"
+        id="name-input"
+        onChange={[Function]}
+        placeholder="Name or Abilities"
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -117,4 +117,6 @@ const mapStateToProps = state => ({
     loading: state.loading,
 });
 
+export { PokemonsDetails as TestablePokemonsDetails };
+
 export default connect(mapStateToProps, mapDispatchToProps)(PokemonsDetails);

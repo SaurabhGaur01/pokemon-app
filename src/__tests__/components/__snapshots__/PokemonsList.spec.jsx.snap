@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonsList should render component correctly 1`] = `
+<Fragment>
+  <div
+    className="filter-container"
+  >
+    <Connect(FilterBar) />
+    <AppPaging
+      count={1}
+      handleChange={[Function]}
+      handleChangeRowsPerPage={[Function]}
+      page={1}
+    />
+  </div>
+  <div
+    className="cards-container"
+  >
+    <withRouter(Pokemon)
+      key="0"
+      pokemon={
+        Object {
+          "abilities": Array [
+            "mockvalue",
+            "mockValue2",
+          ],
+          "height": 10,
+          "id": 1,
+          "name": "mockName",
+          "sprites": "mockSprites",
+          "weight": 20,
+        }
+      }
+    />
+  </div>
+  <AppPaging
+    count={1}
+    handleChange={[Function]}
+    handleChangeRowsPerPage={[Function]}
+    page={1}
+  />
+</Fragment>
+`;
+
+exports[`PokemonsList should render component correctly when loading is true 1`] = `
+<Fragment>
+  <div
+    className="filter-container"
+  >
+    <Connect(FilterBar) />
+    <AppPaging
+      count={1}
+      handleChange={[Function]}
+      handleChangeRowsPerPage={[Function]}
+      page={1}
+    />
+  </div>
+  <div
+    className="bg-load"
+    data-testid="loading"
+  >
+    <img
+      alt="loadingImage"
+      className="image-load"
+      src="loadImg.gif"
+    />
+  </div>
+  <div
+    className="cards-container"
+  />
+  <AppPaging
+    count={1}
+    handleChange={[Function]}
+    handleChangeRowsPerPage={[Function]}
+    page={1}
+  />
+</Fragment>
+`;

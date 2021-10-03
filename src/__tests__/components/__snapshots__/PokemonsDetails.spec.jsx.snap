@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonsDetails should render component correctly 1`] = `
+<Fragment>
+  <div
+    className="pok-details"
+    key="#1 mockValue"
+  >
+    <div
+      className="main-info-container"
+    >
+      <span
+        className="detail-name"
+      >
+        #1 MOCKVALUE
+      </span>
+      <div
+        className="flex-details card-detail-container"
+      >
+        <div
+          className="detail-col-1"
+        >
+          <img
+            alt="mockValue"
+            className="detail-img"
+            src="mockImage"
+          />
+          <div
+            className="detail-text"
+          />
+        </div>
+        <div
+          className="flex-details-2"
+        >
+          <div
+            className="mr-2"
+          >
+            <h4>
+              Details Pokemon
+            </h4>
+            <div
+              className="my-3"
+              data-testid="pokemon-height"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Height: 
+              </span>
+              10
+            </div>
+            <div
+              className="my-3"
+              data-testid="pokemon-weight"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Weight: 
+              </span>
+              20
+            </div>
+            <div
+              className="my-3"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Capture Rate: 
+              </span>
+              mockValue
+            </div>
+            <div
+              className="my-3"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Growth Rate: 
+              </span>
+              mockValue
+            </div>
+            <div
+              className="my-3"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Base Exp: 
+              </span>
+              mockExperience
+            </div>
+            <div
+              className="type-container"
+            >
+              <span
+                className="type-title"
+              >
+                Types
+              </span>
+              <ul
+                className="type-list-det"
+              >
+                <li
+                  key="mockValue"
+                >
+                  mockValue
+                </li>
+                <li
+                  key="mockValueTwo"
+                >
+                  mockValueTwo
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h4>
+              Details Species
+            </h4>
+            <div
+              className="my-3"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Habitat: 
+              </span>
+            </div>
+            <div
+              className="my-3"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Shape: 
+              </span>
+            </div>
+            <div
+              className="my-3"
+            >
+              <span
+                className="font-weight-bold"
+              >
+                Color: 
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;
+
+exports[`PokemonsDetails should render component correctly when loading is true 1`] = `
+<Fragment>
+  <div
+    className="bg-load"
+    data-testid="loading-det"
+  >
+    <img
+      alt="loadingImage"
+      className="margin-top-30 image-load"
+      src="loadImg.gif"
+    />
+  </div>
+</Fragment>
+`;

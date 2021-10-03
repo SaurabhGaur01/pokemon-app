@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppDropdown should render component correctly 1`] = `
+<div
+  className="input-group input-group-sm mb-3"
+>
+  <div
+    className="input-group-prepend"
+  >
+    <span
+      className="input-group-text"
+      id="inputGroup-sizing-sm"
+    >
+      mockLabel
+    </span>
+  </div>
+  <select
+    aria-label="Default select example"
+    className="form-select"
+    data-testid="connectedDropdown"
+    id="form-select"
+    onChange={[MockFunction]}
+  >
+    <option
+      key="0"
+      value="mockValue"
+    >
+      mockText
+    </option>
+  </select>
+</div>
+`;
