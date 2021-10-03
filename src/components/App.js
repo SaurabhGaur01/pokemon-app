@@ -7,9 +7,9 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import InfoMessages from './shared/InfoMessages';
 import PokemonsList from './Pokemon/PokemonsList';
-import handleRetrievePokemonData from '../thunks/handleRetreivePokemonData';
+import PokemonsDetails from './Pokemon/PokemonsDetails';
+import handleRetrievePokemonData from '../actions/handleRetreivePokemonData';
 
 const App = ({ handleRetrievePokemonData }) =>{
   React.useEffect(() => {
@@ -18,24 +18,23 @@ const App = ({ handleRetrievePokemonData }) =>{
 
   return (
     <Router>
-      <div className="header-Nav">
-          <div className="flex-start">
+      <div className="header-Nav d-flex justify-content-between">
+          <div className="d-flex justify-content-start">
             <Link className="clear-link" to="/">
-              <h1 className="self-center color-black">Pokemon Catalog</h1>
+              <h1 className="self-center text-dark">Pokemon Catalog</h1>
             </Link>
             <ul className="self-center list-links">
               <li>
-                <Link className="clear-link color-white" to="/">Home</Link>
+                <Link className="clear-link text-white" to="/">Home</Link>
               </li>
             </ul>
           </div>
-          <InfoMessages />
         </div>
         <div>
           <Switch>
-            {/* <Route exact path="/pokemon/:number">
+            <Route exact path="/pokemon/:number">
               <PokemonsDetails />
-            </Route> */}
+            </Route>
             <Route exact path="/">
               <PokemonsList />
             </Route>

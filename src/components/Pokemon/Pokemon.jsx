@@ -4,28 +4,29 @@ import { withRouter, Link } from 'react-router-dom';
 
 const Pokemon = ({ pokemon }) => {
   const {
-    number, name, image, height, weight, abilities
+    id, name, sprites, height, weight, abilities
   } = pokemon;
+  const abilitiesList = abilities.map(ability => ability.ability.name);
   return (
     <div>
-      <Link className="pokemon-card" to={`/pokemon/${number}`} id="link-detail">
+      <Link className="pokemon-card" to={`/pokemon/${id}`} id="link-detail">
         <div className="d-flex-around title-card">
           <span>
             #
-            {number}
+            {id}
           </span>
           <span data-testid="pokemon-name">
-            {name.charAt(0).toUpperCase() + name.slice(1)}
+            {name && name.charAt(0).toUpperCase() + name.slice(1)}
           </span>
         </div>
-        <img className="card-image" src={image} alt={name} />
+        <img className="card-image" src={sprites.front_default} alt={name} />
         <span className="type-title">Height - {height}</span>
         <span className="type-title">Weight - {weight}</span>
         <div className="type-container">
           <span className="type-title">Abilities</span>
           <ul className="type-list">
             {
-              abilities.map(ability => (<li key={ability}>{ability}</li>))
+              abilitiesList && abilitiesList.map(ability => (<li key={ability}>{ability}</li>))
             }
           </ul>
         </div>
@@ -36,10 +37,13 @@ const Pokemon = ({ pokemon }) => {
 
 Pokemon.propTypes = {
   pokemon: PropTypes.shape({
-    number: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    sprites: PropTypes.shape({}).isRequired,
     types: PropTypes.arrayOf.isRequired,
+    height: PropTypes.number.isRequired,
+    weight: PropTypes.number.isRequired,
+    abilities: PropTypes.arrayOf(PropTypes.shape({})),
   }).isRequired,
 };
 
