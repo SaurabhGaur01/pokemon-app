@@ -18,7 +18,7 @@ const App = ({ handleRetrievePokemonData }) =>{
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="header-Nav d-flex justify-content-between">
           <div className="d-flex justify-content-start">
             <Link className="clear-link" to="/">
