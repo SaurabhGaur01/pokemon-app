@@ -6,6 +6,7 @@ import {
   Switch,
   Route,
   Link,
+  Redirect,
 } from 'react-router-dom';
 import PokemonsList from './Pokemon/PokemonsList';
 import PokemonsDetails from './Pokemon/PokemonsDetails';
@@ -25,17 +26,20 @@ const App = ({ handleRetrievePokemonData }) =>{
             </Link>
             <ul className="self-center list-links">
               <li>
-                <Link className="clear-link text-white" to="/">Home</Link>
+                <Link className="clear-link text-white" to="/home">Home</Link>
               </li>
             </ul>
           </div>
         </div>
         <div>
           <Switch>
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
             <Route exact path="/pokemon/:number">
               <PokemonsDetails />
             </Route>
-            <Route exact path="/">
+            <Route exact path="/home">
               <PokemonsList />
             </Route>
           </Switch>
